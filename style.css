@@ -1,0 +1,1137 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&display=swap');
+ :root{
+    --fuente--principal:"Corinthia", cursive;
+
+    --color--borde:rgb(255, 192, 192);
+   --color--fondo:#191919;
+    --color--plata:#e3e4e5;
+    --color--fuerte--oscuro:#780000;
+    --color--fuerte--claro:#c1121f;
+    --color--claro:#fdf0d5;
+    --color--bajo--oscuro:#003049;
+    --color--bajo--claro:#669bbc;
+    --color--gradiant--etiqueta:linear-gradient(90deg, #780000 0%, #c1121f 32%, #fdf0d5 100%);
+ 
+
+    
+
+ }
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{   
+    font-family: "Exo 2", sans-serif;
+    font-style: normal;
+    background-color:var(--color--fondo);
+    background-size:cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  
+}
+.salon h3, .salon p, .iglesia h3, .iglesia p, .confirmacion h3 {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+
+.principal, .invitacion, .padrinos-padres, .contador-galeria, .iglesia, .salon, .confirmacion, .boletos{
+    width: 400px;
+    height: 700px;  
+    background: var(--color--fuerte--oscuro);
+    position: relative;
+    color: var(--color--fuerte--claro);
+    overflow: hidden;
+   
+}
+.sobre{
+    height: 600px;
+    
+}
+
+.principal{
+    background-color: var(--color--fondo);
+    
+
+}
+.invitacion .contenido1{
+    color: var(--color--fuerte--claro);;
+}
+.invitacion{
+    color: var(--color--claro);
+}
+
+.padrinos-padres .contenido1, .padrinos-padres .contenido2{
+  color: var(--color--bajo--oscuro);
+
+}
+.padrinos-padres{
+    background-color: var(--color--fuerte--claro);
+}
+.contador-galeria{
+    background-color: var(--color--bajo--oscuro);
+    color: var(--color--claro);
+}
+.iglesia{
+    background-color: var(--color--bajo--claro);
+    color: var(--color--claro);
+}
+.franja{
+    background-color: var(--color--fuerte--oscuro);
+    position: absolute;
+    width: 100%;
+    height: 55%;
+}
+.salon .franja{
+    background-color: var(--color--fuerte--claro);
+    background-image: url(src/img/fondoMariposas1.png);
+    background-size: cover;
+    width: 140%;
+    height: 80%;
+    left: 7%;
+    top: -20px;
+    background-color: var(--color--claro);
+    transform: rotate(20deg);
+}
+.confirmacion{
+    background-color: var(--color--bajo--oscuro);
+    color: var(--color--bajo--oscuro);
+}
+.confirmacion .franja{
+    background-color: var(--color--fuerte--claro);
+    background-size: cover;
+    width: 140%;
+    height: 80%;
+    right: 15%;
+    top: -20px;
+    background-color: var(--color--claro);
+    transform: rotate(-20deg);
+}
+.contenido1, .contenido2{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    position: relative;
+}
+
+hr{
+    margin: 20px auto;
+    width:250px;
+}
+
+h1, h2,h3{
+
+    margin: 10px 0;
+    text-align: center;
+}
+h1::first-letter,h2::first-letter,h3::first-letter,p::first-letter{
+    font-size: 150%;
+}
+.principal,.contador-galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre{
+    position: relative;
+    width: 350px;
+    height: 81.15%;
+    background-color: var(--color--claro);
+    border-radius: 0 10px 10px 0;
+   
+    
+}
+
+.tapa{
+   
+
+   border-left: 200px solid var(--color--fuerte--oscuro);
+   border-bottom: 285px solid transparent;
+   border-top: 285px solid transparent; 
+   
+}
+.btn-principal{
+
+    color: var(--color--claro);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color--fuerte--oscuro);
+    border-radius: 20px;
+    overflow: hidden;
+   
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;    
+    top: 250px;
+    left: 165px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+   
+      
+}
+
+.btn-principal::before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: var(--color--gradiant--etiqueta);
+    animation: rotate 4s linear infinite;
+    cursor: pointer;
+}
+.btn-principal::after{
+    inset: 5px;
+    content: '';
+    position: absolute;
+    background: var(--color--fuerte--claro);
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.btn-principal p{
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-principal:hover{
+  
+    top: 240px;
+    left: 155px;
+    width: 100px;
+    height: 100px;
+
+}
+.triangulo{
+
+    position: absolute;
+    margin: 0;
+
+    background-image: url(src/img/fondoFlores.jpg);
+  
+    background-size: 100% 100%;
+    background-size: cover;
+    height: 310px;
+    width: 100%;
+    border-radius:  0 0 20px 20px ;
+
+}
+
+.fecha{
+    position: relative;
+}
+.mariposa1{
+    position: absolute;
+    width: 100px;
+    top: 5px;
+}
+.mariposa2{
+    position: absolute;
+    top: 165px;
+    right: 20px;
+    width: 70px;
+}
+.corona{
+    margin: 0px auto  10px  auto;
+    position: relative;
+    left: 155px;
+    top: 50px;
+    width: 90px;
+    height: 70px;
+}
+
+.nombre-xv{
+    font-size:2rem;
+    font-family: var(--fuente--principal); 
+}
+.fecha-txt{
+    margin: 0;
+}
+p{
+    text-align: justify;
+}
+li{
+    margin: 0 20px;
+}
+
+
+.texto-invitado{
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 40px;
+    height: 500px;
+    color: var(--color--texto--etiqueta);
+    font-size: 70px;
+    font-family: var(--fuente--principal);
+    
+}
+.container{
+    display: none;
+    animation: deslizarCaida 2s;
+}
+
+.animado {
+    animation: x 3s forwards;
+}
+
+  
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes x{
+    from{
+        transform: rotate(0deg) scale(1);
+    }
+    to{
+        transform: rotate(90deg) scale(0.5);
+    }
+}
+.abrir{
+    
+    animation: abrir 2s forwards;
+    
+}
+@keyframes abrir {
+    from{
+        
+        transform: translateX(0px)  rotateY(0deg);
+    }25%{
+        transform: translateX(-350px)rotateY(-45deg);
+       
+    }
+    100%{
+        transform: translateX(-350px)rotateY(-180deg);
+       
+    }
+}
+ @keyframes deslizarCaida{
+    from{
+        transform: translateY(-10000px);
+    }
+    to{
+        transform: translateY(0);
+    }
+ }
+
+
+
+
+
+
+
+ 
+.container-cont{
+    margin-top:20px;
+    border-radius: 20px 0 20px 0;
+    place-items: center;
+    font-family: 'Share Tech Mono', monospace;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-color: var(--color--fuerte--claro);
+}
+.countdown{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.countdown div{
+    display: grid;
+    place-items: center;
+   
+}
+.h1-cont{
+
+    font-size: 30px;
+   
+}
+.p-cont{
+    margin: 15px;
+    display: grid;
+    place-items: center;
+    border: solid 1px var(--color--claro);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: var(--color--claro);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--color--bajo--claro);
+}
+.span-cont{
+    display: block;
+    padding: 1px;
+    text-align: center;
+    color: var(--color--claro);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.cont-gal{
+    position: relative;
+}
+.final-sms{
+
+
+    margin-top: 20px 20px;
+    border: solid var(--color--claro);
+    border-radius: 20px 0 20px 0; 
+    place-items: center;
+    font-family: 'Share Tech Mono', monospace;
+    width: 98%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color--fuerte--claro);
+    color: var(--color--claro);
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(-1000%);
+    transition: ease-in-out 0.5s;
+    background-color: var(--color--fuerte--claro);
+}
+.final-sms .h2-cont{
+    text-align: center;
+    font-size: 100px;
+    color: var(--color--claro);
+}
+
+
+
+/*GALERIA*/
+.titulo-galeria{
+    margin: 0;
+}
+.contador-galeria hr {
+    margin-bottom: 0;
+}
+.galeria{
+    display: flex;
+    width: 350px;
+    height: 200px;
+    
+}
+.img-galeria{
+    border-radius: 10px 0 10px 0;
+    border: solid var(--color--bajo--oscuro);
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5seg ease ;
+}
+.img-galeria:hover{
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.titulo-galeria{
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+
+
+/*MARCO*/
+.paloma{
+    position: absolute;
+    left: -5px;
+    top: -10px;
+    width: 60px;
+}
+.mensaje-padres{
+    text-indent: 40px; 
+}
+.padrinos-padres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color--plata);
+    border-radius: 20px 0;
+    overflow: hidden;
+}
+
+.box div{
+    z-index: 2;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 140%;
+    background: var(--color--gradiant--etiqueta);
+    animation: rotate 4s linear infinite;
+
+}
+.box::after{
+    inset: 5px;
+    content: '';
+    position: absolute;
+    background: var(--color--claro);
+    margin: 2px;
+    border-radius: 16px 0;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.animacion1{
+    animation: animacion1 2s linear ;
+}
+.animacion2{
+    animation: animacion2 10s linear infinite ;
+}
+.animacion3{
+    animation: animacion3 2s linear ;
+}
+.animacion4{
+    animation: animacion4 5s linear ;
+}
+.animacion5{
+    animation: animacion5 2s linear ;
+}
+.animacion6{
+    animation: animacion6 3s linear ;
+}
+
+
+@keyframes animacion1 {
+    0%{
+        transform: translateX(-100%);
+    }
+    85%{
+        transform: translateX(10%);
+    }
+    92%{
+        transform: translateX(-5%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animacion2 {
+    0% {
+        text-shadow: 
+  0 0 10px #fff, 
+  0 0 20px #fff, 
+  0 0 30px #fff, 
+  0 0 40px #007bff, /* Azul */
+  0 0 70px #007bff, 
+  0 0 80px #007bff, 
+  0 0 100px #007bff, 
+  0 0 150px #007bff;
+      }
+      50% {
+        text-shadow: none;
+      }
+      100% {
+        text-shadow: 
+  0 0 10px #fff, 
+  0 0 20px #fff, 
+  0 0 30px #fff, 
+  0 0 40px #007bff, /* Azul */
+  0 0 70px #007bff, 
+  0 0 80px #007bff, 
+  0 0 100px #007bff, 
+  0 0 150px #007bff;
+      }
+    }
+
+
+@keyframes animacion3 {
+    0%{
+       transform: translateX(100%);
+    }
+    85%{
+         transform: translateX(10%);
+    }
+    92%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes animacion4 {
+    from{
+         opacity:0;
+    }
+    to{
+        opacity:100;
+    }
+}
+@keyframes animacion5 {
+    0%{
+       transform: translateY(-100%);
+    }
+    85%{
+         transform: translateY(-10%);
+    }
+    92%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes animacion6 {
+    0%{
+       transform: translateY(-100%);
+       transform: scale(10%);
+    }
+    45%{
+         transform: translateY(-40%);
+         transform: scale(-90%);
+    }
+    92%{
+        transform: translateY(-5%);
+        ransform: scale(-95%);
+    }
+    100%{
+        transform: translateY(0%);
+        ransform: scale(100%);
+    }
+}
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  margin-right: 10px;
+
+}
+
+
+.direccion{
+    text-align: center;
+}
+.map{
+    margin: 10px auto ;
+	height: 240px;
+	width: 90%;
+    border-radius: 5px;
+}
+.dir h1, .dir h2, .dir h3 {
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.img-fondo{
+    margin: 15px ;
+    height: 185px;
+}
+.btn-mapa{
+   
+    display: flex;
+    justify-content: end;
+}
+.btn-mapa a{
+    width: 100px;
+    border-radius: 5px;
+    color:var(--color--claro);
+    text-align: center;
+    text-decoration: none;
+    margin: 0 20px  ;
+    border: solid 1px;
+}
+
+
+
+/*BOTON */
+
+.btn-neon{
+    width: 200px;
+    margin-top: 40px;
+    border: solid 0.4px black;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 2s; 
+    overflow:hidden;
+}
+.btn-neon:hover{
+    border: none;
+    background:var(--color--bajo--oscuro);
+    box-shadow: 0 0 10px var(--color--bajo--oscuro), 0 0 40px  var(--color--bajo--oscuro), 0 0 80px var(--color--bajo--oscuro);
+    transition-delay: 1s;
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(---color--bajo--oscuro));
+}
+#span3{
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--color--bajo--oscuro));
+}
+#span2{
+    top:-100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(---color--bajo--oscuro));
+}
+#span4{
+    bottom:-100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--color--bajo--oscuro));
+}
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+.btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/*SWITCHH*/
+
+.switchBtn {
+    position: relative;
+    margin: 10px auto;
+    display: inline-block;
+    width: 110px;
+    height: 34px;
+}
+.switchBtn input {display:none;}
+.slide {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    box-shadow: 0 0 10px #ccc, 0 0 40px #ccc, 0 0 80px #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 8px;
+    color: #fff;
+}
+.slide:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 78px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slide {
+    background-color: #8CE196;  
+  
+    box-shadow: 0 0 10px #8CE196, 0 0 40px #8CE196, 0 0 80px #8CE196;
+    padding-left: 40px;
+}
+input:focus + .slide {
+    box-shadow: 0 0 1px #01aeed;
+}
+input:checked + .slide:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    left: -20px;
+}
+.slide.round {
+    border-radius: 34px;
+}
+.slide.round:before {
+    border-radius: 50%;
+}
+
+
+
+input:checked + .slide::after {
+    content: "Sì";
+}
+input:not(:checked) + .slide::after {
+    content: "No";
+}
+
+
+/*EFECTO MAQUINA DE ESCRBIR*/
+#maquina-de-escribir::after {
+  content: ''; /* Cursor de la máquina de escribir */
+  animation: blink-caret 0.75s infinite;
+  border-right: 1px solid; /* Añadimos un borde derecho para simular el cursor */
+  margin-left: 5px; /* Ajustamos el margen izquierdo para el cursor */
+}
+
+@keyframes type-effect {
+  from { width: 0; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(0, 0, 0); }
+}
+
+.texto-invitado{
+    top: 0;
+    color: var(--color--bajo--oscuro);
+    background: var(--color--fuerte--oscuro);
+    color: var(--color--claro);
+    font-size: 40px;
+    letter-spacing: 3px;
+    height: 100%;
+    right:  30px;
+    width: 50px;
+}
+
+@media screen and (min-width: 600px) {
+    .principal, .invitacion, .padrinos-padres, .contador-galeria, .iglesia, .salon, .confirmacion{
+        width: 100%;
+    }
+  
+    body{
+        font-size: 1.5rem;
+        
+    }
+    .invitacion .contenido2{
+        margin: 35px;
+    }
+    .img-fondo{
+        width: 80%;
+        height: 80%;
+    
+    }
+    .triangulo{
+        width: 100%;
+        height: 15rem;
+    }
+    .corona{
+        left: 46.5%;
+    }
+    .contador-galeria, .iglesia, .salon,.confirmacion{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .franja{
+        transform: rotate(90deg);
+        height: 8%;
+        
+    
+        
+    }
+    a{
+        width: 400px;
+    }
+    .galeria{
+        width: 100%;
+        height: 300px;
+    }
+    .container-cont{
+        margin-top: 50px;
+        width: 100%;
+        height: 80%;
+    }
+    .contador-galeria .contenido1, .iglesia .contenido1, .salon .contenido1,.confirmacion .contenido1{
+
+        
+        width: 50%;
+        height: 80%;
+    }
+    .contador-galeria .contenido2, .iglesia .contenido2, .salon .contenido2,.confirmacion .contenido2{
+        width: 50%;
+        height: 80%;
+      
+    }
+    hr{
+        display: none;
+    }
+    .btn-mapa a{
+        width: 200px;
+        color: var(--color--bajo--oscuro);
+      
+    }
+    .maquina-de-escribir{
+        font-size: 1.3rem;
+    }
+    .confirmacion .contenido2{
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .box::before{
+        height: 280%;
+    }
+    .box .contenido2{
+        width: 96%;
+    }
+    .salon h3, .salon p, .iglesia h3, .iglesia p, .confirmacion h3 {
+        margin-top:  10px;
+        font-size: 1.3rem;
+    }
+    .boletos{
+        width: 100%;
+    }
+    .final-sms{
+        margin-top: 50px;
+        height: 440px;
+    }
+}
+
+
+#formCantidad {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:var(--color--bajo--claro);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--color--claro);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+  
+    border: 1px solid var(--color--bajo--claro);
+    border-radius: 5px;
+}
+
+.select {
+   
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: var(--color--bajo--claro);
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px top 50%;
+    background-size: 16px;
+    
+}
+
+option {
+    padding: 10px;
+}
+.contbtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.msg{
+    text-align: left;
+    color: var(--color--claro);
+   
+    
+}
+.btn-switch1{
+    margin:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iglesia .img-fondo{
+    height: 175px;
+}
+.iglesia {
+    margin-bottom: 10px;
+}
+.boletos{
+    margin: 0 auto;
+    background-color: var(--color--claro);
+   overflow: hidden;
+   
+    
+}
+.boleto{
+    position: relative;
+    width: 950px;
+    height: 300px;
+    background-image: url(src/img/boleto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid white;
+ 
+}
+.contenido-qr{
+    width: 235px;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    
+    
+}
+
+.txt-boleto-sup, .txt-boleto-inf{
+    color: var(--color--fuerte--oscuro);
+    font-size: 15px;
+}
+
+
+
+.map{
+    margin-top: 80px;
+}
+.container-boleto{
+ 
+    background-color: var(--color--fuerte--claro);
+   display: flex;
+   align-items: center;
+    width: 950px;
+    height: 310px;
+    border-radius: 20px;
+    transform: scale(0.4);
+    border: solid 5px var(--color--fuerte--oscuro);
+}   
+.margen-boleto{
+   
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.boletos .contbtn .btn-neon{
+    color: var(--color--fuerte--claro);
+}
+.boletos .contbtn .btn-neon:hover{
+    color:white;
+}
+.boletos{
+    display: none;
+}
+
+.agradecimiento{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+/* Estilos para el botón flotante */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(235, 4, 185, 0.185);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+.floating-button:hover {
+    background-color: rgba(235, 4, 185, 0.897);
+}
+.audio-container {
+    position: absolute;
+    width: 100%;
+    
+    margin-top: 50px; /* Espacio para el botón flotante */
+}
+.img-fondo{
+    border-radius: 10px;
+}
+.mis-padrinos{
+    width: 90%;
+ 
+}
